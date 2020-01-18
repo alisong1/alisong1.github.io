@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Alison's HCDE 439 Physical Computing Page!</title> 
+        <title>Alison's HCDE 439 Physical Computing Page! 🌟</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -12,13 +12,36 @@
     <body> 
 
         <div class="header">
-            <h1> Alison's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
+            <h1>Alison's Assignment 2!</h1>
             <p>
             Here is all the documentation for assignment 2!
             </p>
+            <h2> Schematic </h2>
+            <p>
+            <img src="assign2schematic.JPG" width=400></a>
+            <p>
+            This is my schematic! I chose to use 330 ohm resistors for the RBG LED to be conservative as to not blow out the LED. For red I originally calculated 2V = .02 * R, where R = 100 ohms and green and blue 3.2V = .02 * R, R = 160 ohms, however, when I used 100 and 220 resistors (closest I had to 160), the LED was very bright and hard to look at so I bumped all the resistors up to 300 ohm. 
+            <p>
+            </p>
+            <h2> Code </h2>
+            <p>
+            <img src="code.jpg" width=800></a>
+            </p>
+            <p>
+            This is my code. Each pin is connected to a different LED, and it works by separately telling each pin to turn on, wait for a second, and turn off. This creates the ordered blinking effect. 
+            </p>
+            <h2> Circuit </h2>
+            <p>
+            <img src="circuit.JPG" width=400></a>
+            </p>
+            <p>
+            This is a picture of my circuit! 
+            </p>
+            <p>
+            <img src="circuit.gif" width=400></a>
+            </p>
+            <p>
+            And finally, here's a gif of my circuit's operation. I couldn't have done this assignment without the help of TJ and Gina in class in figuring out how to create a circuit for a singular blinking LED, <a href="https://www.youtube.com/watch?v=iidi2wE8gok">this</a> youtube tutorial on creating multiple blinking LEDS, and <a href="http://www.techdose.com/electronics/Wiring-Multiple-LEDs/226/page3.html">this</a> schematic example.
         </div>
         
     </body>

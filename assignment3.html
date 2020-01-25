@@ -20,7 +20,7 @@
             <p>
             <img src="a3schem.jpg" width=400></a>
             <p>
-            This is my schematic! I chose to use a 10k ohm resistor for the button because that seems to be the standard for pushbuttons (according to the internet it preserves longevity of the button and reduces static). Next, I chose to use 330 ohm resistors for the RBG LED to be conservative as to not blow out the LED. For red I originally calculated 2V = .02 * R, where R = 100 ohms and green and blue 3.2V = .02 * R, R = 160 ohms, however, when I used 100 and 220 resistors (closest I had to 160), the LED was very bright and hard for my phone camera to pick up so I bumped all the resistors up to 330 ohm. 
+            This is my schematic! I chose to use a 220 ohm resistor for the LED because even though according to my calculations (5-3.3 = 20(10^-3)*R, R=85), you're supposed to use a 100 ohm resistor, I used 220 because I find the LED really harsh to look at with 100. I also used a 220ohm resistor with the photoresistor in order to create a voltage divider. Voltage dividers takes in higher voltages and produces lower voltages, so we can expect the product of the voltage divider to be a fraction of the input. 
             <p>
             </p>
             <h2> Code </h2>
@@ -28,7 +28,7 @@
             <img src="a3code.png" width=400></a>
             </p>
             <p>
-            This is my code. It works by telling the button to wait for input, and when it gets input, it fades the RGB LED through a variety of colors before turning off.  
+            This is my code. It works by constantly checking the photoresistor to see what the level of light in the environment is. If it's low enough, it turns on the LED. If the room brightens, then the LED turns off. 
             </p>
             <h2> Circuit </h2>
             <p>
@@ -41,7 +41,7 @@
             <img src="a3.gif" width=400></a>
             </p>
             <p>
-            And finally, here's a gif of my circuit's operation. I couldn't have done this assignment without the help of TJ and Gina in class in figuring out how to use pushbottons and RGB LEDs, <a href="https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-3-driving-an-rgb-led">this</a> tutorial on wiring RBG LEDs, and <a href="https://www.instructables.com/id/Fading-RGB-LED-Arduino/">this</a> tutorial on fading an RBG LED, and <a href="https://create.arduino.cc/projecthub/55895/how-to-turn-rgb-led-on-0dc2c5">this</a> tutorial on RGB LEDs and pushbuttons.
+            And finally, here's a gif of my circuit's operation. I use my hand to cover the photoresistor to simulate darkness, because I couldn't hold the camera and also get up and turn the lights on and off. I couldn't have done this assignment without the help of TJ and Gina in class, <a href="https://learn.sparkfun.com/nt-3-driving-an-rgb-led">this</a> tutorial on wiring RBG LEDs and <a href="https://www.instructables.com/id/Arduino-Photoresistor-LED-onoff/">this</a> tutorial on using photoresistors.
             <p>
             </p>
             <p>

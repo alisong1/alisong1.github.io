@@ -12,41 +12,41 @@
     <body> 
 
         <div class="header">
-            <h1>Alison's Assignment 5: Talking to the web!</h1>
+            <h1>Alison's Assignment 6: The Web Talks Back!</h1>
             <p>
-            Here is all the documentation for assignment 5!
+            Here is all the documentation for assignment 6!
             </p>
             <h2> Schematic </h2>
             <p>
-            <img src="a5schem.png" width=400></a>
+            <img src="a6schematic.JPG" width=400></a>
             <p>
-            This is my schematic! I used 10K ohm resistors because those are the standard for buttons.
+            This is my schematic! I don't need any resistor for the joystick because it has one built in, and I chose to use a 220 ohm resistor for the blue LED, despite technically being able to use a 100 ohm one, because it is too bright and messes with my phone camera. Calculation: (5-3.3 = 20(10^-3)*R, R=85)
             <p>
             </p>
             <h2> Code </h2>
             <p>
-            <img src="a5code2.png" width=800></a>
+            <img src="a6code1.png" width=800></a>
             </p>
             <p>
-            This is my arduino code for the circuit. It is relatively simple, it looks for inputs from the two buttons and then transforms them into strings that can be read by sketch.js.
+            This is my sketch.js code for the circuit. It is an amalgamation of example 2 from p5 examples and addons, and also example code from the slides for lecture 10. It works by mapping the joystick xy values from the serial monitor to a line on the screen, and it does this repeatedly to make a chart. It then also is looking for any input from the keyboard, and if there is, it writes it to the serial monitor so it can be read by the arduino.
             </p>
-            <img src="a5code1.png" width=800></a>
+            <img src="a6code2.png" width=800></a>
             </p>
             <p>
-            This is the segment of the sketch.js that I edited. If button1 is pressed, it makes the size of the ellipse bigger by increasing x and y, and if button 2 is pressed, it generates new random numbers for the rgb values of the ellipse's fill.
+            This is my arduino code, which is an amalgamation of example codes from the lecture 10 slides. It works by writing the joystick's x and y values to the serial monitor so that it can be send to the sketch.js, while also simultaneously checking if anything has been written to the serial monitor, and if so, adjusts the LED's brightness accordingly. 
             </p>
             <h2> Circuit </h2>
             <p>
-            <img src="a5circuit.JPG" width=400></a>
+            <img src="a6pic.JPG" width=400></a>
             </p>
             <p>
             This is a picture of my circuit! 
             </p>
             <p>
-            <img src="a5.gif" width=400></a>
+            <img src="a6.gif" width=400></a>
             </p>
             <p>
-            And finally, here's a gif of my circuit's operation. I couldn't have done this assignment without the help of Jasper and prof Nadya in class! My p5 code is an edited version of the code that was supplied to us.
+            And finally, here's a gif of my circuit's operation. I couldn't have done this assignment without the help of TJ, Jasper, and prof Nadya in class! My p5 code is an edited amalgamation of p5 example code and lecture 10 example code.
         </div>
     </body>
 </html>

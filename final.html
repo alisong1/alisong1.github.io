@@ -12,20 +12,39 @@
     <body> 
 
         <div class="header">
-            <h1>Alison's Final Project!</h1>
+            <h1>Alison's Final Project: Plant Moisture Sensor</h1>
             <p>
             Here is all the documentation for my final project!
             </p>
-            <h2> Initial Sketch </h2>
+            <h2> Schematic </h2>
             <p>
             <img src="circuitfinal.JPG" width=400></a>
             <p>
-            This is my initial sketch, it has a bill of materials, sketch, and circuit. This product will detect plant moisture and blink an LED when the plant needs to be watered. 
+            This is my initial sketch, it has a bill of materials, sketch, and circuit. This product will detect plant moisture and blink an LED when the plant needs to be watered. I am having issues with root rot with a particular plant, so hopefully this will help.
+            </p>
             <p>
             To build this project I will need: a soil moisture sensor, a 9v battery, a battery hookup, an arduino uno, a prototype shield, wires, a 330 ohm resistor, and a blue LED. I chose to use a 330 ohm resistor for the blue LED, despite technically being able to use a 100 ohm one, because it is too bright and messes with my phone camera. Calculation: (5-3.3 = 20(10^-3)*R, R=85) 
             </p>
-        
-    </div>
-        
+            <h2> Code </h2>
+            <p>
+            <img src="finacode.png" width=800></a>
+            </p>
+            <p>
+            This is my code for the arduino. It works by taking an average value of the soil moisture over a short period of time, and if the moisture is low enough, it flashes an LED to tell the user to water their plant. 
+            </p>
+            <h2> Circuit </h2>
+            <p>
+            <img src="finalcircuit.JPG" width=400></a>
+            <img src="finalproduct.JPG" width=400></a>
+            </p>
+            <p>
+            This is a picture of my circuit! The first picture is of the circuit itself, and the second is of it in it's housing.
+            </p>
+            <p>
+            <img src="finalgif.gif" width=400></a>
+            </p>
+            <p>
+            And finally, here's a gif of my circuit's operation. I couldn't have done this assignment without the help of Jasper in learning how to solder, code is partially copied from <a href = "https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f"> this </a> site.
+        </div>
     </body>
 </html>
